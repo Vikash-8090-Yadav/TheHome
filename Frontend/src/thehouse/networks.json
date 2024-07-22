@@ -1,0 +1,8 @@
+{
+  "scroll-sepolia": {
+    "InvestmentClub": {
+      "address": "0x3B64B31ca93Fd16dcCcBF0E4514D259178fcAC79",
+      "startBlock": 5680903
+    }
+  }
+}

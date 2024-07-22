@@ -1,0 +1,26 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: InvestmentClub
+    network: scroll-sepolia
+    source:
+      address: "0x3B64B31ca93Fd16dcCcBF0E4514D259178fcAC79"
+      abi: InvestmentClub
+      startBlock: 5680903
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Gamemember
+      abis:
+        - name: InvestmentClub
+          file: ./abis/InvestmentClub.json
+      eventHandlers:
+        - event: Gamemember(uint256,address,uint256,uint256)
+          handler: handleGamemember
+      file: ./src/investment-club.ts
