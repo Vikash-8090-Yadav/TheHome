@@ -7,8 +7,8 @@ function Gamemember() {
  
     const [tokens, setTokens] = useState([]);
     const [isLoading, setIsLoading] = useState(true); // Add loading state
-  
-    const QueryURL = "https://api.studio.thegraph.com/query/67475/treasured/v0.0.1";
+    
+    const QueryURL = "https://api.studio.thegraph.com/query/67475/thehouse/v0.0.1";
   
     const query = `
       {
